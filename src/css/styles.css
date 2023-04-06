@@ -1,0 +1,96 @@
+body {
+  background-color: #BEC5AD;
+}
+
+/* Estilos CSS para a navbar */
+      #navbar {
+        background-color: #519872; /* verde */
+        overflow: hidden;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        height: 60px;
+        z-index: 3;
+      }
+      #navbar-logo {
+        display: block;
+        height: 100px;
+        margin-left: 5px;
+        margin-top: 11px;
+      }
+      #navbar a {
+        display: block;
+        float: left;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      #navbar a:hover {
+        background-color: #3B5249; /* verde mais escuro */
+        color: #fff;
+        border: 5px;
+        border-color: #34252F;
+        border-style: ridge;
+        border-radius: 25px;
+      }
+/* Estilos CSS para o rodapé */
+      #rodape {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #519872; /* verde */
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        z-index: 4;
+      }
+/* Estilos CSS para Conteúdo Principal */
+    #conteudo-principal {
+        margin-top: 0px;
+        margin-left: 150px;
+        margin-right: 150px;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.5;
+        position: relative;
+    }
+/* Estilos CSS para o logo */
+    #logo {
+        display:flex;
+        margin: 0 auto;
+        margin-top: 0;
+        width: 350px;
+    }
+/* Estilos CSS para o botão "Encontrar Ponto de Coleta Mais Próximo" */
+     #encontrar {
+        background-color: #4caf50; /* verde mais escuro */
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+      #encontrar:hover {
+        background-color: #66bb6a; /* verde */
+    }
+    /* INDEX CONTATO */
+    /* Estilo do Conteudo Principal*/
+      #conteudo-principalContato {
+        margin-left: 150px;
+        position: unset;
+      }
+      #logoContato {
+        margin-left: 600px;
+        width: 400;
+      }
+    /* Estilos do Formulário */
+      #formcontato{
+        margin-top: 0px;
+        
+      }

@@ -1,0 +1,88 @@
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RediVivus - Início</title>
+    <!--Referencia ao Css-->
+      <link rel="stylesheet" href="../css/styles.css">
+
+      <meta charset="utf-8">
+    <!--Site Responsivo-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Manifesto do aplicativo -->
+      <link rel="manifest" href="../manifest.json">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar">
+      <img src="../Imgs/NomeLogo.png" alt="Nome do RediVivus" id="navbar-logo">
+      <a href="index.html">Início</a>
+      <a href="indexColetaSeletiva.html">Coleta Seletiva</a>
+      <a href="indexMaps.html">Mapa</a>
+      <a href="indexContato.html">Contato</a>
+    </div>
+    <!-- Conteúdo principal -->
+    <div id="conteudo-principal">
+      <img src="../Imgs/Logo.png" alt="Logo do RediVivus" id="logo">
+    </div>
+    <!-- Rodapé -->
+    <div id="rodape">
+      <p>© 2023 RediVivus - Todos os direitos reservados.</p>
+    </div>
+
+   <script>
+      const cacheName = 'RediVivus-v1';
+      const filesToCache = [
+        '/',
+        '/index.html',
+        '/estilos.css',
+        '/img/logo.png',
+        '/manifest.json'
+      ];
+    
+      self.addEventListener('install', function(event) {
+        console.log('Service Worker: Installing....');
+    
+        event.waitUntil(
+          caches.open(cacheName).then(function(cache) {
+            console.log('Service Worker: Caching Files');
+            return cache.addAll(filesToCache);
+          })
+        );
+      });
+    
+      self.addEventListener('activate', function(event) {
+        console.log('Service Worker: Activating....');
+    
+        event.waitUntil(
+          caches.keys().then(function(cacheNames) {
+            return Promise.all(
+              cacheNames.map(function(cache) {
+                if (cache !== cacheName) {
+                  console.log('Service Worker: Clearing Old Cache');
+                  return caches.delete(cache);
+                }
+              })
+            );
+          })
+        );
+      });
+    
+      self.addEventListener('fetch', function(event) {
+        console.log('Service Worker: Fetching....');
+    
+        event.respondWith(
+          caches.match(event.request).then(function(response) {
+            if (response) {
+              console.log('Service Worker: Cache Hit');
+              return response;
+            }
+    
+            console.log('Service Worker: Cache Miss');
+            return fetch(event.request);
+          })
+        );
+      });
+    </script>
+  </body>
+</html>
