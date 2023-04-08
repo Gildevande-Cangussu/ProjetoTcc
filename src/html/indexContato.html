@@ -22,15 +22,11 @@
       <a href="indexMaps.html">Mapa</a>
       <a href="indexContato.html">Contato</a>
     </div>
+
     <!-- Conteúdo principal -->
-    <div id="conteudo-principalContato">
-      <table>
-        <tr>
-          <img id="logoContato" src="../Imgs/Logo.png" alt="Logo do RediVivus" id="logo">
-        </tr>
-      
-        <tr>
-          <form action="indexObrigado.html" id="formcontato">
+    <div id="conteudo-principalContato" class="grid-container">
+      <div class="col-form">
+        <form action="indexObrigado.html" id="formcontato">
           <label for="fname">Nome:</label><br>
           <input type="text" id="fname" name="fname" value=""><br><br>
           <label for="lname">Email:</label><br>
@@ -38,10 +34,13 @@
           <label for="lcoment">Comentário:</label><br>
           <input type="text" id="lcoment" name="lcoment" value=""><br><br>
           <input type="submit" value="Enviar">
-          </form>
-        </tr>
-    </table>
+        </form>
+      </div>
+      <div class="col-logo">
+        <img id="logoContato" src="../Imgs/Logo.png" alt="Logo do RediVivus">
+      </div>
     </div>
+
     <!-- Rodapé -->
     <div id="rodape">
       <p>© 2023 RediVivus - Todos os direitos reservados.</p>

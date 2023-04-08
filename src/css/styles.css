@@ -37,6 +37,7 @@ body {
         border-style: ridge;
         border-radius: 25px;
       }
+      
 /* Estilos CSS para o rodapé */
       #rodape {
         position: fixed;
@@ -49,6 +50,7 @@ body {
         padding: 10px;
         z-index: 4;
       }
+      
 /* Estilos CSS para Conteúdo Principal */
     #conteudo-principal {
         margin-top: 0px;
@@ -58,6 +60,7 @@ body {
         font-size: 18px;
         line-height: 1.5;
         position: relative;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);        
     }
 /* Estilos CSS para o logo */
     #logo {
@@ -65,32 +68,46 @@ body {
         margin: 0 auto;
         margin-top: 0;
         width: 350px;
+        /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
     }
-/* Estilos CSS para o botão "Encontrar Ponto de Coleta Mais Próximo" */
-     #encontrar {
-        background-color: #4caf50; /* verde mais escuro */
-        color: #fff;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
+    #logo:hover {/*  logo flutua suavemente */
+      transform: translateY(-5px);
+      transition: transform 0.2s ease-in-out;
     }
-      #encontrar:hover {
-        background-color: #66bb6a; /* verde */
-    }
+    
     /* INDEX CONTATO */
     /* Estilo do Conteudo Principal*/
-      #conteudo-principalContato {
-        margin-left: 150px;
-        position: unset;
-      }
-      #logoContato {
-        margin-left: 600px;
-        width: 400;
-      }
-    /* Estilos do Formulário */
-      #formcontato{
-        margin-top: 0px;
-        
-      }
+    #conteudo-principalContato {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .col-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #formcontato {
+      margin: 0;
+    }
+    
+    .col-logo {
+      display: flex;
+      justify-content: center;
+    }
+    
+    #logoContato {
+      max-width: 100%;
+      height: auto;
+    }
+    
