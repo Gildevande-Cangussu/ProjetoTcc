@@ -79,8 +79,8 @@ body {
     /* Estilo do Conteudo Principal*/
     #conteudo-principalContato {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: center;    
     }
     
     .grid-container {
