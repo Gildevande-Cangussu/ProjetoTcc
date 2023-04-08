@@ -38,53 +38,7 @@ body {
         border-style: ridge;
         border-radius: 25px;
       }
-/* Estilos CSS para o Novorodapé */     
-      #footer {
-        background-color: #333;
-        color: #fff;
-        padding: 30px 0;
-        font-size: 16px;
-        }
-        
-        .grid-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-        }
-        
-        .col-social ul, .col-contato ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        }
-        
-        .col-social ul li, .col-contato ul li {
-        margin-bottom: 10px;
-        }
-        
-        .col-social h3, .col-contato h3 {
-        font-size: 20px;
-        margin-bottom: 20px;
-        }
-        
-        .col-social a, .col-contato li {
-        color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        }
-        
-        .col-social a i, .col-contato li i {
-        font-size: 24px;
-        margin-right: 10px;
-        }
-        
-        .col-social a:hover, .col-contato li:hover {
-        text-decoration: underline;
-        }        
+
 /* Estilos CSS para o rodapé */
       #rodape {
         position: fixed;
