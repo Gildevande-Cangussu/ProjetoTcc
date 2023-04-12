@@ -7,12 +7,12 @@
     "background_color": "#FFFFFF",
     "icons": [
     {
-    "src": "/Imgs/REDIVIVUS.ico",
+    "src": "/Imgs/REDIVIVUS.png",
     "sizes": "192x192",
     "type": "image/png"
     },
     {
-    "src": "/Imgs/REDIVIVUS.ico",
+    "src": "/Imgs/REDIVIVUS.png",
     "sizes": "512x512",
     "type": "image/png"
     }
