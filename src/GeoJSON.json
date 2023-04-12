@@ -1,0 +1,32 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-46.4222, -23.5000]
+        },
+        "properties": {
+          "tipo": "ponto de coleta",
+          "residuos": ["papel", "plástico"],
+          "endereco": "Rua X, nº 123",
+          "horario": "segunda a sexta, das 8h às 17h"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-46.4222, -23.5000]
+        },
+        "properties": {
+          "tipo": "ponto de coleta",
+          "residuos": ["vidro", "metal"],
+          "endereco": "Rua Y, nº 456",
+          "horario": "segunda a sábado, das 9h às 18h"
+        }
+      }
+    ]
+  }
+  

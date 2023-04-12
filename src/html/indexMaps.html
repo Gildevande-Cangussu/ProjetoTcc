@@ -6,13 +6,18 @@
       <link rel="stylesheet" href="../css/styles.css">
 
       <meta charset="utf-8">
-   <!--Site Responsivo-->
+    <!--Site Responsivo-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- habilitar a instalação do aplicativo na tela inicial--> 
       <meta name="mobile-web-app-capable" content="yes">
-      <!-- Manifesto do aplicativo -->
+    <!-- Manifesto do aplicativo -->
       <link rel="manifest" href="manifest.json">
-  </head>
+    <!--SDK do Mapbox--> 
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet" />
+  
+    <script src="../map.js"></script>
+</head>
   <body>
     <!-- Navbar -->
     <div id="navbar">
@@ -23,14 +28,34 @@
       <a href="indexContato.html">Contato</a>
     </div>
     <!-- Conteúdo principal -->
-        <div id="conteudo-principal">
-          <img src="../Imgs/Logo.png" alt="Logo do RediVivus" id="logo">
-        </div>
+    <div id="map"></div>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lsZGV2YW5kZSIsImEiOiJjbDgyYmp2b2kwb2RpM3dvM25uM2QxZ3BjIn0.7YJltuO14MOrUeqVXCwsnA';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/gildevande/clgbrcweo008101mhgrizrvp9',
+			center: [-46.665278, -23.563611],
+			zoom: 13
+		});
+    map.on('load', function () {
+        map.addLayer({
+            'id': 'pontos-de-coleta',
+            'type': 'symbol',
+            'source': {
+                'type': 'geojson',
+                'data': '../GeoJSON.json'
+            },
+            'layout': {
+                'icon-image': 'icone_do_ponto_de_coleta',
+                'text-field': '{nome_do_ponto}',
+                'text-size': 12,
+                'text-offset': [0, 0.6],
+                'text-anchor': 'top'
+            }
+        });
+    });
+</script>
         
-    <!-- Rodapé -->
-        <div id="rodape">
-          <p>© 2023 RediVivus - Todos os direitos reservados.</p>
-        </div>
-</body>
+  </body>
 </html>
    
