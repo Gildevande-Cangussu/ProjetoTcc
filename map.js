@@ -1,10 +1,10 @@
 // Token de acesso Mapbox
-mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lsZGV2YW5kZSIsImEiOiJjbGdlMDg1MzYyZmwwM3FuOXZ6NmFvb2xqIn0.aDtdfBqxaNz6WLBxQU4ZFw';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lsZGV2YW5kZSIsImEiOiJjbDgyYmp2b2kwb2RpM3dvM25uM2QxZ3BjIn0.7YJltuO14MOrUeqVXCwsnA';
 
 // Criação do mapa
 var map = new mapboxgl.Map({
     container: 'map', // ID do contêiner HTML do mapa
-    style: 'mapbox://styles/gildevande/clge0c707003401o1th9fuzdi', // Estilo do mapa (pode ser alterado)
+    style: 'mapbox://styles/gildevande/clge8s6le004201o1tjxbc4j8', // Estilo do mapa (pode ser alterado)
     center: [-46.4222, -23.5000], // Coordenadas do centro do mapa (São Miguel Paulista)
     zoom: 13 // Nível de zoom inicial do mapa
 });
