@@ -2,12 +2,13 @@
   "type": "Feature",
   "geometry": {
       "type": "Point",
-      "coordinates": [-46.65993, -23.54575]
+      "coordinates": [-23.513914,-46.456693]
   },
   "properties": {
-      "nome_do_ponto": "Novo Ponto de Coleta",
-      "endereco": "Rua Exemplo, 123",
+      "nome_do_ponto": "EcoPonto Imperador",
+      "endereco": "Av. Ribeirão Jacu, n° 201 (Baixo do Viaduto Jacu Pêssego)",
+      "cep": "08050-420",
       "telefone": "(11) 1234-5678",
-      "horario": "Seg-Sex: 8h às 17h"
+      "horario": "De segunda a sexta-feira das 08h às 17h, aos sábados das 09h às 14h"
   }
 }
