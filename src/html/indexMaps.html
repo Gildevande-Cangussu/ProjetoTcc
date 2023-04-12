@@ -13,12 +13,15 @@
     <!-- Manifesto do aplicativo -->
       <link rel="manifest" href="manifest.json">
     <!--SDK do Mapbox--> 
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet" />
+
+      <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.js'></script>
+      <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.css' rel='stylesheet' />
+    
   
     <script src="../map.js"></script>
+    <script src="../GeoJSON.jsons"></script>
 </head>
-  <body>
+  <body id="indexMaps">
     <!-- Navbar -->
     <div id="navbar">
       <img src="../Imgs/NomeLogo.png" alt="Nome do RediVivus" id="navbar-logo">
@@ -28,34 +31,21 @@
       <a href="indexContato.html">Contato</a>
     </div>
     <!-- Conteúdo principal -->
-    <div id="map"></div>
-	<script>
-		mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lsZGV2YW5kZSIsImEiOiJjbDgyYmp2b2kwb2RpM3dvM25uM2QxZ3BjIn0.7YJltuO14MOrUeqVXCwsnA';
-		var map = new mapboxgl.Map({
-			container: 'map',
-			style: 'mapbox://styles/gildevande/clgbrcweo008101mhgrizrvp9',
-			center: [-46.665278, -23.563611],
-			zoom: 13
-		});
-    map.on('load', function () {
-        map.addLayer({
-            'id': 'pontos-de-coleta',
-            'type': 'symbol',
-            'source': {
-                'type': 'geojson',
-                'data': '../GeoJSON.json'
-            },
-            'layout': {
-                'icon-image': 'icone_do_ponto_de_coleta',
-                'text-field': '{nome_do_ponto}',
-                'text-size': 12,
-                'text-offset': [0, 0.6],
-                'text-anchor': 'top'
-            }
-        });
-    });
+   
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lsZGV2YW5kZSIsImEiOiJjbDgyYmp2b2kwb2RpM3dvM25uM2QxZ3BjIn0.7YJltuO14MOrUeqVXCwsnA';
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/gildevande/clgbrcweo008101mhgrizrvp9', // style URL
+    center: [-46.4222, -23.5000], // starting position [lng, lat]
+    zoom: 13, // starting zoom
+});
 </script>
-        
+     
+
+  </script>
+    
   </body>
 </html>
    
