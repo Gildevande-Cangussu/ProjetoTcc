@@ -7,7 +7,8 @@ const urlsToCache = [
   '/indexContato.html',
   '/css/styles.css',
   '/Imgs/NomeLogo.png',
-  '/Imgs/Logo.png'
+  '/Imgs/Logo.png',
+  '/Imgs/REDIVIVUS.png'
 ];
 
 self.addEventListener('install', function(event) {
