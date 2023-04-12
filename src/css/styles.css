@@ -143,6 +143,7 @@ body {
     /* INDEX MAPS */
    
     #map {
-      width: 700px; 
+      width: 1000px; 
       height: 500px;
+      margin-bottom: 20%;
     }
