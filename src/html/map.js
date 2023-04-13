@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lsZGV2YW5kZSIsImEiOiJjbDgyYmp2b2kwb2RpM3dvM
 // Criação do mapa
 const map = new mapboxgl.Map({
     container: 'map', // ID do contêiner HTML do mapa
-    style: 'mapbox://styles/gildevande/clge8s6le004201o1tjxbc4j8',  // Estilo do mapa (pode ser alterado)
+    style: 'mapbox://styles/gildevande/clgfpuegp002x01qrobvegh35',  // Estilo do mapa (pode ser alterado)
     center: [-46.4222, -23.5000], // Coordenadas do centro do mapa (São Miguel Paulista)
     zoom: 13, // Nível de zoom inicial do mapa
 });
