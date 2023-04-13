@@ -1,14 +1,21 @@
 {
   "type": "Feature",
   "geometry": {
-      "type": "Point",
-      "coordinates": [-23.513914,-46.456693]
+    "type": "Point",
+    "coordinates": [
+      -46.437937,
+      -23.543666
+    ]
   },
   "properties": {
-      "nome_do_ponto": "EcoPonto Imperador",
-      "endereco": "Av. Ribeirão Jacu, n° 201 (Baixo do Viaduto Jacu Pêssego)",
-      "cep": "08050-420",
-      "telefone": "(11) 1234-5678",
-      "horario": "De segunda a sexta-feira das 08h às 17h, aos sábados das 09h às 14h"
+    "tipo": "EcoPonto",
+    "nome_do_ponto": "EcoPonto Imperador",
+    "residuos": [
+      "papel",
+      "plástico"
+    ],
+    "endereco": "Av. Ribeirão Jacu, n° 201 (Baixo do Viaduto Jacu Pêssego)",
+    "cep": "08050-420",
+    "horario": "De segunda a sexta-feira das 08h às 17h, aos sábados das 09h às 14h"
   }
 }
