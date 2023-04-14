@@ -52,29 +52,49 @@ body {
         padding: 10px;
         z-index: 4;
       }
-      
+
 /* Estilos CSS para Conteúdo Principal */
     #conteudo-principal {
-        margin-top: 0px;
+        /* margin-top: 0px;
         margin-left: 150px;
-        margin-right: 150px;
+        margin-right: 150px; */
         padding: 20px;
         font-size: 18px;
         line-height: 1.5;
-        position: relative;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  */      
+    }
+    .grid-containerInicial {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .col-icentivo{
+      display: flex;
+      flex-direction: column;
     }
 /* Estilos CSS para o logo */
-    #logo {
+    #logoInicioParte1 {
+      position: flex;
+    }
+    #logo { 
         display:flex;
-        margin: 0 auto;
         margin-top: 0;
-        width: 350px;
+        width: 750px;
         /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
     }
-    #logo:hover {/*  logo flutua suavemente */
+    #logo:hover {/*  logo flutua suavemente */ /* <-- ACHO QUE NAO PRECISA DISSO*/
       transform: translateY(-5px);
       transition: transform 0.2s ease-in-out;
+    }
+    .col-logoInicio {
+      display: flex;
+      justify-content: center;
     }
     /* INDEX COLETA SELETIVA */
     #conteudo-principalColetaSeletiva{
@@ -111,7 +131,7 @@ body {
       align-items: center;    
     }
     
-    .grid-container {
+    .grid-containerCS {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
