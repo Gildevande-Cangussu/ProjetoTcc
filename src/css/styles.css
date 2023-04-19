@@ -77,11 +77,10 @@ body {
     .col-icentivo{
       display: flex;
       flex-direction: column;
+      position: relative;
     }
 /* Estilos CSS para o logo */
-    #logoInicioParte1 {
-      position: flex;
-    }
+
     #logo { 
         display:flex;
         margin-top: 0;
@@ -95,6 +94,8 @@ body {
     .col-logoInicio {
       display: flex;
       justify-content: center;
+      position: absolute;
+      right: 0;
     }
     /* INDEX COLETA SELETIVA */
     #conteudo-principalColetaSeletiva{
