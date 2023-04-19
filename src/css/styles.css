@@ -163,6 +163,13 @@ body {
     /* INDEX MAPS */
    
     #map {
+      margin-top: 5%;
       width: 1000px; 
       height: 500px;
+      
     }
+
+    #geocoder-container > div {
+      min-width: 50%;
+      margin-left: 25%;
+  }
