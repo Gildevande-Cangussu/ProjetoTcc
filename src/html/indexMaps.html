@@ -36,33 +36,29 @@ type="text/css"
     </div>
     <!-- Conteúdo principal -->
    
-<div id='map'></div>
-<!-- Caixa de busca -->
-<div id="procurar-endereco">
-  <input type="text" id="search-input" placeholder="Insira endereço ou CEP" />
-</div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lsZGV2YW5kZSIsImEiOiJjbDgyYmp2b2kwb2RpM3dvM25uM2QxZ3BjIn0.7YJltuO14MOrUeqVXCwsnA';
-const map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/gildevande/clgfpuegp002x01qrobvegh35',  // Estilo do mapa (pode ser alterado)
-    center: [-46.4222, -23.5000], // Coordenadas do centro do mapa (São Miguel Paulista)
-    zoom: 13,//Nível de zoom inicial do mapa
-});
-//adicionando caixa de busca ao mapa//
-const geocoder = new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken,
-    mapboxgl: mapboxgl,
-    placeholder: "Pesquisar endereço",
-    marker: false,
-  });
-  document.getElementById("procurar-endereco").appendChild(geocoder.onAdd(map));
+    <div id='map'></div>
 
-</script>
-     
-
-  </script>
-    
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZ2lsZGV2YW5kZSIsImEiOiJjbDgyYmp2b2kwb2RpM3dvM25uM2QxZ3BjIn0.7YJltuO14MOrUeqVXCwsnA';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/gildevande/clgfpuegp002x01qrobvegh35',  // Estilo do mapa (pode ser alterado)
+        center: [-46.4222, -23.5000], // Coordenadas do centro do mapa (São Miguel Paulista)
+        zoom: 13,//Nível de zoom inicial do mapa
+    });
+    //adicionando caixa de busca ao mapa//
+    const geocoder = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        placeholder: "Pesquisar Endereço",
+        marker: {
+                color: '#519872'
+            },
+            mapboxgl: mapboxgl
+      });
+      map.addControl(geocoder);
+      
+    </script>
   </body>
 </html>
    
