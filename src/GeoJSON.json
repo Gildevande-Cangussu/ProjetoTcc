@@ -1,89 +1,97 @@
 {
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      -46.437937,
-      -23.543666
-    ]
-  },
-  "properties01": {
-    "tipo": "EcoPonto",
-    "nome_do_ponto": "EcoPonto Imperador",
-    "residuos": [
-      "papel",
-      "plástico"
-    ],
-    "endereco": "Av. Ribeirão Jacu, n° 201 (Baixo do Viaduto Jacu Pêssego)",
-    "cep": "08050-420",
-    "horario": "De segunda a sexta-feira das 08h às 17h, aos sábados das 09h às 14h",
-    "tel": "--"
-  }
-  ,
-
-  "type02": "Feature",
-  "geometry01": {
-    "type": "Point",
-    "coordinates": [
-      -46.437937,
-      -23.543666
-    ]
-  },
-  "properties02": {
-    "tipo": "EcoPonto",
-    "nome_do_ponto": "GCM - Comando Operacional Leste",
-    "residuos": [
-      "papel",
-      "plástico",
-      "metal",
-      "virdro"
-    ],
-    "endereco": "Estr. de Mogi das Cruzes, 1860 - Vila Rio Branco - São Paulo - SP",
-    "cep": "03682-130 08050-420",
-    "horario": "--",
-    "tel": "156"
-  },
-  "type03": "Feature",
-  "geometry03": {
-    "type": "Point",
-    "coordinates": [
-      -46.437937,
-      -23.543666
-    ]
-  },
-"properties03": {
-  "tipo": "EcoPonto",
-  "nome_do_ponto": "Ecoponto Jardim São Nicolau",
-  "residuos": [
-    "papel",
-    "plástico",
-    "alumínio",
-    "virdro",
-    "rsíduos de construções civis"
-  ],
-  "endereco": "R. Agreste de Itabaiana, 590 - Vila Uniao (Zona Leste) - São Paulo - SP",
-  "cep": "03683-000",
-  "horario": "Segunda a sábado, das 6h às 22h e aos domingos e feriados das 6h às 18h",
-  "tel":"156"
+"type": "FeatureCollection",
+"features": [
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-46.437937,
+-23.543666
+]
 },
-  "type04": "Feature",
-  "geometry04": {
-    "type": "Point",
-    "coordinates": [
-      -46.437937,
-      -23.543666
-    ]
-  },
-"properties04": {
-  "tipo": "EcoPonto",
-  "nome_do_ponto": "Central de Abastecimento Leste",
-  "residuos": [
-    "Óleo de cozinha"
-  ],
-  "endereco": "Av. Imperador, 1900 - São Miguel - São Paulo - SP",
-  "cep": "08050-000",
-  "horario": "Terça a Sábado das 7h às 18h. Domingo das 7h às 13h.",
-  "tel":"156"
+"properties": {
+"tipo": "EcoPonto",
+"nome_do_ponto": "EcoPonto Imperador",
+"residuos": [
+"papel",
+"plástico"
+],
+"endereco": "Av. Ribeirão Jacu, n° 201 (Baixo do Viaduto Jacu Pêssego)",
+"cep": "08050-420",
+"horario": "De segunda a sexta-feira das 08h às 17h, aos sábados das 09h às 14h",
+"tel": "--"
 }
-
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-46.541171,
+-23.507417
+]
+},
+"properties": {
+"tipo": "EcoPonto",
+"nome_do_ponto": "GCM - Comando Operacional Leste",
+"residuos": [
+"papel",
+"plástico",
+"metal",
+"vidro"
+],
+"endereco": "Estr. de Mogi das Cruzes, 1860 - Vila Rio Branco - São Paulo - SP",
+"cep": "03682-130",
+"horario": "--",
+"tel": "156"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-46.446655,
+-23.540431
+]
+},
+"properties": {
+"tipo": "EcoPonto",
+"nome_do_ponto": "Ecoponto Jardim São Nicolau",
+"residuos": [
+"papel",
+"plástico",
+"alumínio",
+"vidro",
+"resíduos de construções civis"
+],
+"endereco": "R. Agreste de Itabaiana, 590 - Vila União (Zona Leste) - São Paulo - SP",
+"cep": "03683-000",
+"horario": "Segunda a sábado, das 6h às 22h e aos domingos e feriados das 6h às 18h",
+"tel": "156"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-46.429177,
+-23.506813
+]
+},
+"properties": {
+"tipo": "EcoPonto",
+"nome_do_ponto": "Central de Abastecimento Leste",
+"residuos": [
+"Óleo de cozinha"
+],
+"endereco": "Av. Imperador, 1900 - São Miguel - São Paulo - SP",
+"cep": "08050-000",
+"horario": "Terça a Sábado das 7h às 18h. Domingo das 7h às 13h.",
+"tel": "156"
+}
+}
+]
 }
