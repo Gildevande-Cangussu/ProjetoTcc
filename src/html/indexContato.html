@@ -4,7 +4,25 @@
     <title>RediVivus - Contato</title>
     <!--Referencia ao Css-->
       <link rel="stylesheet" href="../css/styles.css">
-
+    <!--conexao com o banco de dados-->  
+    <?php
+    // inclui o arquivo de conexão com o banco de dados
+    include "/conexao.php"
+    
+    // realiza a consulta
+    $query = "SELECT * FROM PontoColeta";
+    $resultado = mysqli_query($conexao, $query);
+    
+    // exibe os resultados
+    while ($linha = mysqli_fetch_assoc($resultado)) {
+        echo "ID: " . $linha['id_ponto'] . "<br>";
+        echo "Nome: " . $linha['nome'] . "<br><br>";
+    }
+    
+    // fecha a conexão
+    mysqli_close($conexao);
+    ?>
+    
       <meta charset="utf-8">
    <!--Site Responsivo-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +32,7 @@
       <link rel="manifest" href="manifest.json">
   </head>
   <body>
+    
     <!-- Navbar -->
     <div id="navbar">
       <img src="../Imgs/NomeLogo.png" alt="Nome do RediVivus" id="navbar-logo">
@@ -22,7 +41,7 @@
       <a href="indexMaps.html">Mapa</a>
       <a href="indexContato.html">Contato</a>
     </div>
-
+    
     <!-- Conteúdo principal -->
     <div id="conteudo-principalContato" class="grid-containerCS">
       <div class="col-form">
