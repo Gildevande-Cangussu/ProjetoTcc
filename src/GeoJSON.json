@@ -92,6 +92,50 @@
 "horario": "Terça a Sábado das 7h às 18h. Domingo das 7h às 13h.",
 "tel": "156"
 }
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-23.518837690931235,
+-46.47286277506432
+]
+},
+"properties": {
+"tipo": "Escola",
+"nome_do_ponto": "EMEF Professora Wanny Salgado Rocha",
+"residuos": [
+"Óleo de cozinha"
+],
+"endereco": "R. Sílvio Ribeiro dos Santos, 104 - Vila Uniao (Zona Leste) - São Paulo - SP",
+"cep": "03683-040",
+"horario": "Terça a Sábado das 7h às 18h. Domingo das 7h às 13h.",
+"tel": "(11)22804192"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-23.518837690931235,
+-46.47286277506432
+]
+},
+"properties": {
+"tipo": "EcoPonto",
+"nome_do_ponto": "UBS Jardim São Nicolau",
+"residuos": [
+"Óleo de cozinha",
+"Medicamentos"
+],
+"endereco": "R. Brook Taylor, 30 - Jardim Nordeste - São Paulo - SP",
+"cep": "03690-000",
+"horario": "Segunda a Sexta das 7h às 19h.",
+"tel": "(11)22807508"
+}
 }
 ]
 }
